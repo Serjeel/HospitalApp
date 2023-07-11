@@ -1,0 +1,123 @@
+.products-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    .products {
+        display: flex;
+        justify-content: center;
+        width: 1150px;
+        height: 440px;
+        background-color: #E2F0EF;
+
+        &-information {
+            display: flex;
+            flex-direction: column;
+            width: 513px;
+            margin-top: 45px;
+            margin-left: 65px;
+
+            &-header1 {
+                margin-bottom: 10px;
+            }
+
+            &-header2 {
+                margin-top: 0;
+            }
+
+            &-service {
+                color: #364844;
+                font-family: PT Sans Caption;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                list-style: url('../../images/ellipse.svg') inside;
+                margin-bottom: 10px;
+            }
+
+            &-price-block {
+                width: 190px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+
+            &-price1 {
+                color: #364844;
+                font-family: PT Sans Caption;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-price2 {
+                color: #868686;
+                text-decoration: line-through;
+
+                font-family: PT Sans Caption;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                text-decoration-line: strikethrough;
+            }
+
+            &-buttons-block {
+                display: flex;
+                justify-content: space-between;
+                width: 415px;
+                margin-top: 20px;
+            }
+
+            &-button1 {
+                cursor: pointer;
+                width: 196px;
+                height: 43px;
+                border-radius: 50px;
+                border: none;
+                background: #0DBC91;
+                color: #FFF;
+                text-align: center;
+                font-family: PT Sans Caption;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+
+                &:hover {
+                    background: #00D29F;
+                }
+            }
+
+
+            &-button2 {
+                cursor: pointer;
+                width: 196px;
+                height: 43px;
+                border-radius: 50px;
+                border: 1px solid #0DBC91;
+                background: none;
+                color: #0DBC91;
+                text-align: center;
+                font-family: PT Sans Caption;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+
+                &:hover {
+                    border: 1px solid #0DBC91;
+                    background: #0DBC91;
+                    color: #FFF;
+                }
+            }
+        }
+
+        &-image {
+            width: 70%;
+            clip-path: polygon(8% 0, 100% 0, 100% 100%, 20% 100%);
+        }
+    }
+}
