@@ -119,3 +119,46 @@
         }
     }
 }
+
+.mobile-header-block {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .mobile-header {
+
+        height: 65px;
+
+        &-menuButton {
+            &-image {
+                width: 37px;
+                height: 26px;
+            }
+        }
+
+        &-logo {
+            width: 62px;
+            height: 20px;
+        }
+
+        &-inform-block {}
+
+        &-inform-number {}
+
+        &-inform-address {}
+    }
+}
+
+@media (max-width: 500px) {
+    .header1-block {
+        display: none;
+    }
+
+    .header2-block {
+        display: none;
+    }
+
+    .mobile-header-block {
+        display: flex;
+    }
+}

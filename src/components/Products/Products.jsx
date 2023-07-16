@@ -1,14 +1,45 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react'
 import DoctorImage from '../../images/doctor.jpeg'
 import './Products.scss'
 
 const Products = () => {
+    const [stat, setStat] = useState('');
+
+    const products = [
+        {
+            name: 'CHECK-UP 1',
+            gender: 'для мужчин',
+            products: ['Гормональный скриминг', 'Тестостерон', 'Свободный тестостерон',
+                'Глобулин, связывающий половые гормоны'],
+            oldPrice: 3500,
+            newPrice: 2800
+        },
+        {
+            name: 'CHECK-UP 2',
+            gender: 'для мужчин',
+            products: ['Гормональный скриминг', 'Тестостерон', 'Свободный тестостерон',
+                'Глобулин, связывающий половые гормоны'],
+            oldPrice: 3300,
+            newPrice: 2700
+        },
+        {
+            name: 'CHECK-UP 3',
+            gender: 'для женщин',
+            products: ['Гормональный скриминг', 'Тестостерон', 'Свободный тестостерон',
+                'Глобулин, связывающий половые гормоны'],
+            oldPrice: 4000,
+            newPrice: 3200
+        }
+    ]
+    const [productsValue, setProductsValue] = useState(products[0]);
 
     return (
         <div className='products-block'>
             <div className='products'>
                 <div className='products-information'>
-                    <h1 className='products-information-header1'>CHECK-UP</h1>
-                    <h2 className='products-information-header2'>для мужчин</h2>
+                    <h1 className='products-information-header1'>{productsValue.name}</h1>
+                    <h2 className='products-information-header2'>{productsValue.gender}</h2>
                     <li className='products-information-service'>Гормональный скриминг</li>
                     <li className='products-information-service'>Тестостерон</li>
                     <li className='products-information-service'>Свободный тестостерон</li>

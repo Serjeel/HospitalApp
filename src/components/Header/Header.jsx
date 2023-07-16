@@ -1,6 +1,7 @@
 import Logo from '../../images/logo.svg'
 import Geotag from '../../images/geotag.svg'
 import WhatsappImage from '../../images/whatsapp.svg'
+import MenuImage from '../../images/menu.svg'
 import './Header.scss'
 
 const Header = () => {
@@ -33,6 +34,18 @@ const Header = () => {
                     <button className='header2-button'>Специалисты</button>
                     <button className='header2-button'>Цены</button>
                     <button className='header2-button'>Контакты</button>
+                </div>
+            </header>
+            <header className='mobile-header-block'>
+                <div className='mobile-header'>
+                    <button className='mobile-header-menuButton'>
+                        <img className='mobile-header-menuButton-image' src={MenuImage} alt='MenuImage' />
+                    </button>
+                    <img className='mobile-header-logo' src={Logo} alt='Logo' />
+                    <div className='mobile-header-inform-block'>
+                        <span className='mobile-header-inform-number'></span>
+                        <span className='mobile-header-inform-address'></span>
+                    </div>
                 </div>
             </header>
         </>
